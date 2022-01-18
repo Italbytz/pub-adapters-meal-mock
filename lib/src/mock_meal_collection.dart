@@ -2,10 +2,10 @@ import 'package:meal_ports/meal_ports.dart';
 
 class MockMealCollection implements MealCollection {
   @override
-  var category;
+  MealCategory category;
 
   @override
   List<Meal> meals;
 
-  MockMealCollection({this.category, this.meals});
+  MockMealCollection({required this.category, required this.meals});
 }

@@ -2,28 +2,28 @@ import 'package:meal_ports/meal_ports.dart';
 
 class MockMeal implements Meal {
   @override
-  var additives;
+  Additives additives;
 
   @override
-  var allergens;
+  Allergens allergens;
 
   @override
-  var category;
+  MealCategory category;
 
   @override
-  String image;
+  String? image;
 
   @override
   String name;
 
   @override
-  var price;
+  Price price;
 
   MockMeal(
-      {this.name,
+      {required this.name,
       this.image,
-      this.price,
-      this.allergens,
-      this.additives,
-      this.category});
+      required this.price,
+      this.allergens = Allergens.none,
+      this.additives = Additives.none,
+      required this.category});
 }

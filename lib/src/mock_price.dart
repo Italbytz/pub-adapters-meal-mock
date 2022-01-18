@@ -2,16 +2,16 @@ import 'package:meal_ports/meal_ports.dart';
 
 class MockPrice implements Price {
   @override
-  double employees;
+  double? employees;
 
   @override
-  double others;
+  double? others;
 
   @override
-  double pupils;
+  double? pupils;
 
   @override
-  double students;
+  double? students;
 
   MockPrice({this.employees, this.others, this.pupils, this.students});
 }
